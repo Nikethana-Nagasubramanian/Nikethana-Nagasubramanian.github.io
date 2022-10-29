@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,500&display=swap');
+:root {
+    --bg-color: #F7ECDE;
+    --blue-bg-color: #9ED2C6;
+    --dark-beige-bg-color: #E9DAC1;
+    --bg-color-gray: #313131; 
+    --text-color-gray: rgb(241, 241, 241);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-gray);
+}
+html {
+    scroll-behavior: smooth;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(222 222 222);
+    color: var(--bg-color-gray);
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+  }
+  
+/* #myBtn:hover {
+background-color: #555;
+} */
+.body-container {
+    width: 100%;
+    color: var(--text-color-gray);
+    background-color: var(--bg-color-gray);
+    margin: 0px 0px 0px 0px;
+    padding-top: 20px;
+}
+.global-nav-bar-container {
+    width: 100%;
+    height: 14vh;
+    text-align: center;
+    position: sticky;
+}
+.global-nav-bar-container div {
+    display: inline;
+}
+    .name-container {
+        font-weight: 500;
+        font-size: 30px;
+        width: 20%;
+        color: var(--text-color-gray);
+    }
+        .menu-container {
+            margin-top: 15px;
+            margin-right: 40px;
+            width: 100%;
+        }
+        .menu-container li{
+            list-style-type: none;
+            padding: 20px 20px 20px 20px;
+            display: inline;
+            font-size: 20px;
+            justify-content: space-evenly;
+        }
+        .nav-bar-link {
+            text-decoration: none;
+            width: 25%;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            color: var(--text-color-gray);
+        }
+        .nav-bar a::after{
+            content: '';
+            position: inherit;
+            background-color: rgb(72, 72, 72);
+            width: 10%;
+            height: 2px;
+            left: 0px;
+            top: 15vh;
+        }
+.empty { 
+    width: 100%;
+    height: 30px;
+}
+.about-me {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+}
+.about-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 45vh;
+    /* border: 1px black solid; */
+    display: flex;
+}
+    .about-para {
+        display: inline;
+        width: 70%;
+        padding: 40px 40px 40px 0px;
+        /* border: 1px black solid; */
+        line-height: 1.6;
+        align-items: center;
+        justify-content: center;
+        column-count: 2;
+        column-gap: 50px;
+        column-rule-style: solid;
+        column-rule-width: 1px;
+    }
+    .about-photo {
+        display: inline;
+        width: 30%;
+        padding: 40px 40px 40px 40px;
+        /* border: 1px black solid; */
+        float: left;
+    }
+
+.edu-container {
+    margin-left: 100px;
+    margin-right: 100px;  
+}
+    .edu-info {
+        height: 80vh;
+        /* border: 1px black solid; */
+        display: flex;
+    }
+    .edu-neu {
+        width: 100%;
+        height: 30vh;
+        /* border: 1px black solid; */
+        display: flex;
+    }
+        .edu-neu-logo { 
+            display: inline;
+            /* border: 1px black solid; */
+            width: 28%;
+            padding: 20px 20px 20px 20px;
+            text-align: center;
+        }
+        .edu-neu-text {
+            display: inline;
+            /* border: 1px black solid; */
+            padding: 50px 20px 50px 20px;
+            width: 50%;
+        }
+        .edu-neu-year {
+            display: inline;
+            /* border: 1px black solid; */
+            padding: 80px 20px 50px 20px;
+            width: 20%;
+            text-align: left;
+        }
+    .edu-velammal {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        color: var(--text-color-gray);
+        /* border: 1px black solid; */
+    }
+        .edu-velammal-logo { 
+            display: inline;
+            /* border: 1px black solid; */
+            width: 30%;
+            padding: 60px 20px 20px 0px;
+            text-align: center;
+        }
+        .edu-velammal-text {
+            display: inline;
+            color: var(--text-color-gray);
+            /* border: 1px black solid; */
+            padding: 50px 20px 50px 20px;
+            width: 50%;
+        }
+        .edu-velammal-year {
+            display: inline;
+            /* border: 1px black solid; */
+            padding: 80px 20px 50px 20px;
+            width: 20%;
+            text-align: left;
+        }
+
+.work-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+    ul, .list{
+    list-style: none;
+    padding: 0;
+    }
+
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    background: var(--bg-color-gray);
+    padding: 3rem 0;
+    }
+    .wrapper{
+    background: #c6c6c6;
+    padding: 2rem;
+    border-radius: 15px;
+    }
+    h1{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    color: #2a2839;
+    }
+    .sessions{
+    margin-top: 2rem;
+    border-radius: 12px;
+    position: relative;
+    }
+    .list{
+    padding-bottom: 1.5rem;
+    border-left: 1px solid #515151;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+    }
+    .list:last-child{
+        border: 0px;
+        padding-bottom: 0;
+    }
+    .list::before{
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: rgb(221, 221, 221);
+        border: 1px solid #313131;
+        box-shadow: 3px 3px 0px #7f7f7f;
+        border-radius: 50%;
+        position: absolute;
+        left: -10px;
+        top: 0px;
+    }
+
+    .time{
+    color: #2a2839;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+        }
+    p{
+    color: #4f4f4f;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-top:0.4rem;
+    }
+.timeline-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.interest-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+    .images {
+        align-items: center;
+        justify-content: center;
+        column-count: 3;
+        column-gap: 10px;
+    }
+     .image-text {
+        position: inherit; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        width: 72%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+      }
+      .img-content:hover .image-text {
+        opacity: 1;
+      }
+
+
+.contact-container {
+        margin-left: 100px;
+        margin-right: 100px;  
+}
+    .contact-para li {
+        list-style-type: none;
+        padding: 20px 20px 20px 20px;
+        display: inline;
+        font-size: 20px;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+    }
+
+.footer {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 3px;
+    text-align: center;
+    background-color: rgb(222, 222, 222);
+    color: rgb(27, 27, 27);
+    font-weight: bolder;
+}
+    .mailto, .callto {
+        color: var(--bg-color-gray);
+    }
+
+
+
+@media (max-width: 600px) {
+    p {
+        font-size : 20px;
+    }
+}
