@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+*, body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #F2E8DF;
+}
+html {
+    scroll-behavior: smooth;
+}
+p {
+    font-size: 18px !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+}
+.body-wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.hamburger {
+    display: none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+#myBtn {
+    background-color: #8C0846;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+}
+.navbar-brand img {
+    width: 120px;
+    height: 120px;
+}
+.navbar-nav a {
+    color: #8C0846 !important;
+    font-size: 20px;
+}
+.name-wrapper {
+    color: #8C0846;
+    text-align: center;
+}
+
+.container-about{
+    background-color: #F2E8DF;
+    padding-bottom: 30px;
+}
+    .container-about .row {
+        display: flex;
+    }
+    .container-about .col{
+        text-align: center;
+        position: relative;
+    }
+    .container-about img{
+        height: 500px;
+        width: 376px;
+    }
+.row .align-items-center {
+    padding-bottom: 10px;
+}
+    .neu-logo {
+        /* border-radius: 50%; */
+        width: 200px;
+        height: 200px;
+    }
+.container-work-experience {
+    padding-bottom: 35px;
+}
+    .card-list {
+        background-color: white;
+    }
+.social-icons {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}

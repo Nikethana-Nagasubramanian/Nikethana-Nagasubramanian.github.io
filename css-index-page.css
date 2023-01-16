@@ -30,10 +30,7 @@ html {
     padding: 10px 15px 10px 15px;
     border-radius: 4px;
   }
-  
-/* #myBtn:hover {
-background-color: #555;
-} */
+
 .body-container {
     width: 100%;
     color: var(--text-color-gray);
